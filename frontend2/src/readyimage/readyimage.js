@@ -1,12 +1,12 @@
-import header_ from "../assets/header.webp";
-import card1_ from "../assets/card.webp";
-import card2_ from "../assets/card2.webp";
-import thor_ from "../assets/thor.jpeg";
-import xrepo_ from "../assets/xrepo.jpeg";
-import sizokthola_ from "../assets/sizokthola.jpeg";
-import ironman_ from "../assets/ironman.jpeg";
-import about_ from "../assets/about.jpg";
-import kool_ from "../assets/kool.jpeg";
+import header_ from "../assets/header.webp";//
+import card1_ from "../assets/card.webp";//
+import card2_ from "../assets/card2.webp";//
+import thor_ from "../assets/thor.jpeg";//
+import xrepo_ from "../assets/xrepo.jpeg";//
+import sizokthola_ from "../assets/sizokthola.jpeg";//
+import ironman_ from "../assets/ironman.jpeg";//
+import about_ from "../assets/about.jpg";//
+import kool_ from "../assets/kool.jpeg";//
 // Define the images
 export const images = {
   header: header_,
