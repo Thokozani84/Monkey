@@ -1,0 +1,58 @@
+.header {
+  background: url("/buildings.webp") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  height: 30dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header-content {
+  padding: 1rem;
+}
+
+.header-content h1,
+.header-content-2 h3 {
+  margin: 0;
+  opacity: 0;
+  animation: fadeIn 3s ease-in forwards;
+  will-change: opacity;
+}
+
+.header-content h1 {
+  color: white;
+}
+
+.header-content-2 h3 {
+  color: red;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 40dvh;
+  }
+  .header-content h1 {
+    font-size: 1.5rem;
+  }
+  .header-content-2 h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content h1 {
+    font-size: 1.2rem;
+  }
+  .header-content-2 h3 {
+    font-size: 1rem;
+  }
+}
