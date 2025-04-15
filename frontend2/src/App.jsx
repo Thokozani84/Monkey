@@ -2,7 +2,7 @@ import { lazy, Suspense } from 'react';
 import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import Header from './components/header/header';
 import Navbar from './components/navbar/navbar';
-import LoadingSpinner from './components/ui/LoadingSpinner';
+import LoadingSpinner from './LoadingSpinner';
 import './App.css';
 
 // Lazy-loaded components with explicit webpack chunk names
