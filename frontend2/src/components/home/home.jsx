@@ -1,26 +1,29 @@
+import "./home.css";
+import { useContext } from "react";
+import { fileContext } from "../../context/context";
+import { Link } from "react-router-dom";
+
 const Home = () => {
   const { fakeApi } = useContext(fileContext);
 
   return (
-    <div className="home">
-      {fakeApi.map((item) => (
-        <Link 
-          to={`/${item.section}`} 
-          className="image-card-link"
-          key={item.id} // Prefer item.id over index
-        >
-          <div className="image-card">
+    <main className="home">
+      {fakeApi.map((item, index) => (
+        <article key={index} className="image-card">
+          <Link to={`/${item.section}`} aria-label={item.title}>
             <img
               src={item.image}
               alt={item.title}
               loading="lazy"
-              decoding="async"
-              style={{ width: "100%", height: "auto" }}
+              width="300"
+              height="200"
             />
-            <p>{item.title}</p>
-          </div>
-        </Link>
+          </Link>
+          <p>{item.title}</p>
+        </article>
       ))}
-    </div>
+    </main>
   );
 };
+
+export default Home;

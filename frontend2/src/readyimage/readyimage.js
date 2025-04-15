@@ -27,5 +27,5 @@ export const fakeApi = [
   { image: images.sizokthola, title: "Sizokthola", section: "sizokthola" },
   { image: images.kool, title: "Rea Stotela", section: "reastotela" },
   { image: images.header, title: "Skeem Saam", section: "skeemsam" },
-  { image: images.ironman, title: "Ironman", section: "ironman" }, // Added a new entry as an example
+  { image: images.ironman, title: "", section: "ironman" }, // Added a new entry as an example
 ];
