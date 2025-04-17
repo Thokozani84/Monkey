@@ -6,19 +6,28 @@ const fileContext = createContext();
 const MyProvider = ({ children }) => {
   const [data, setData] = useState({});
   const [id, setId] = useState("");
-  const url = "http://localhost:5000";
 
-  // Static data - no need for memo
-  const sections = ["xrepo", "sizokthola", "dlozilami", "reastotela", "skeemsam", "umkhokha"];
+  // 🔥 Hard‑coded backend URL for production
+  const url = "https://backend200.onrender.com";
 
-  // Stable function references
+  // Static data array
+  const sections = [
+    "xrepo",
+    "sizokthola",
+    "dlozilami",
+    "reastotela",
+    "skeemsam",
+    "umkhokha"
+  ];
+
+  // Stable updater function
   const updateData = useCallback((newData) => {
     setData(prev => ({ ...prev, ...newData }));
   }, []);
 
   const values = useMemo(() => ({
     data,
-    setData: updateData, // More controlled update
+    setData: updateData,
     id,
     setId,
     url,
